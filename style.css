@@ -1,0 +1,158 @@
+/* ============ GLOBALS ============*/
+/*É uma boa prática identificar quando que é HEADER/BODY/FOOTER*/
+
+:root {
+/*Selector que referencia a raiz do HTML*/    
+    --light-blue: #969cb3;
+    --dark-blue: #363f5f;
+    --header-green: #2d4a22;
+    --green: #49aa26;
+    --income-green: #12a454;
+    --expanses-red: #e92929;
+}
+
+* {   /*Seletor universal*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Muda a estilização da box para contar a partir da borda, ou seja, independente o padding da caixa, ela sempre vai ser o valor do tamanho total estipulado*/
+}
+
+/* ============ TITLES ============*/
+/*É uma boa prática identificar quando que é HEADER/BODY/FOOTER*/
+h2 {
+    margin-top: 3.2rem;
+    margin-bottom: 0.8rem;
+    color: var(--dark-blue);
+    font-weight: 400;
+}
+
+
+/* ============ HEADER ============*/
+/*É uma boa prática identificar quando que é HEADER/BODY/FOOTER*/
+header h1 {
+    background: #2d4a22;
+    padding: 2rem 0 8rem;
+    text-align: center;
+}
+
+#logo {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+}
+
+/* ============ BODY ============*/
+/*É uma boa prática identificar quando que é HEADER/BODY/FOOTER*/
+body {
+    background: #f0f2f5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: min(90vw, 800px);
+    /*VW= View Port Width / aqui há uma função que diz: "Se o viewport tiver 90vw e esse for o menor valor, fica com esse valor, senão for o menor valorr, usa 800px*/
+    margin: auto;
+}
+
+/* ============ BALANCE ============*/
+/*É uma boa prática identificar quando que é HEADER/BODY/FOOTER*/
+
+
+#balance {
+    margin-top: -8rem;
+}
+
+#balance h2 {
+    color: #fff;
+    margin-top: 0;
+}
+
+/* ============ BODY ============*/
+/*É uma boa prática identificar quando que é HEADER/BODY/FOOTER*/
+.card {
+    background: white;
+    padding: 1.5rem 2rem;
+    border-radius: 0.25rem;
+    margin-bottom: 2rem;
+    color: var(--dark-blue);
+}
+
+.card h3 {
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.card p {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-top: 1rem;
+}
+
+.card.expensesCard {
+    background: red;
+    color: white;   
+}
+
+.card.total { /*Assim selecionamos elementos que tem duas classes declaradas neles*/
+    background: var(--green);
+    color: #fff;
+}
+
+/* ============ TABLE ============*/
+/*É uma boa prática identificar quando que é HEADER/BODY/FOOTER*/
+#dataTable {
+    width: 100%;
+    border-spacing: 0 0.5rem;
+    color: var(--light-blue);
+}
+
+table thead tr th:first-child,
+table body tr td:first-child { /*Aqui estamos selecionandos todos os first children*/
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+
+table tbody tr:hover {
+    opacity: 1;
+}
+
+table tr {
+    opacity: 0.7;
+}
+
+table th {
+    background: #fff;
+    opacity: 0.8;
+    font-weight: normal;
+    text-align: left;
+    padding: 1rem 2rem;
+
+}
+
+table tbody td {
+    background: #fff;
+    opacity: 0.8;
+    padding: 1rem 2rem;
+    font-weight: normal;
+    text-align: left;
+}
+
+td.description {
+    color: var(--dark-blue);
+}
+
+td.incomes {
+    color: var(--income-green)
+}
+
+td.expenses {
+    color: var(--expenses-red);
+}
+
+/* ============ FOOTER ============*/
+/*É uma boa prática identificar quando que é HEADER/BODY/FOOTER*/
+footer {
+    text-align: center;
+    padding: 2rem 0 2rem;
+    color: white;
+    background: var(--header-green);
+}

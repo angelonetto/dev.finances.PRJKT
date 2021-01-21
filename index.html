@@ -1,0 +1,94 @@
+<!--Vídeos para ver
+    HTML
+        [x] O guia estelar do HTML
+        [x] HTML que faz sentidos para todos
+        [x] Posso ver e ouvir HTML
+        [x] Forms de outro planeta
+    CSS
+        [x] O guia estelar do CSS
+        [x] Nem só de classes ou IDs
+        [x] Nem tudo são pixels
+        [x] Uma caixa dentro da outra
+        [x] App bonito até nos textos
+    Guia Estelar do HTTP
+        [x] Entendendo
+            [x] Visão Geral
+            [x] Visualizando a comunicação
+        [x] Conceitos (menos os proxies)
+        [x] URI (menos a aula de URN)
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
+    <title>dev.finance$</title>
+</head>
+
+<body>
+
+    <header>
+        <h1 id="logo">dev.finance$</h1>
+    </header>
+
+    <main class="container">
+        <section id="balance">
+            <!--Normalmente o child de uma tag section é um H2. Isso é uma boa prática, não uma regra-->
+            <h2>Balanço</h2>
+            <div class="card">
+                <h3>Entradas</h3>
+                <p>R$ 5.000,00</p>
+            </div>
+            
+            <div class="card expensesCard">
+                <h3>Saídas</h3>
+                <p>R$ 2.000,00</p>
+            </div>
+            
+            <div class="card total"> <!--Podemos declarar mais classes separando por "espaço"-->
+                <h3>Total</h3>
+                <p>R$ 3.000,00</p>
+            </div>
+        </section>
+
+        <section id="transactions">
+            <h2>Transações</h2>
+            <table id="dataTable">
+                <thead>
+                    <tr>
+                        <!--tr = table row-->
+                        <th>Descrição</th>
+                        <th>Valor</th>
+                        <th>Data</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="description">Luz</td>
+                        <td class="expenses">- R$500,00</td>
+                        <td class="date">15/01/2021</td>
+                    </tr>
+                    <tr>
+                        <td class="description">Criação Website</td>
+                        <td class="incomes">+ R$5000,00</td>
+                        <td class="date">15/01/2021</td>
+                    </tr>
+                    <tr>
+                        <td class="description">Internet</td>
+                        <td class="expenses">- R$99,00</td>
+                        <td class="date">15/01/2021</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>dev.finance$</p>
+    </footer>
+</body>
+
+</html>
